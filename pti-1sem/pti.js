@@ -1,13 +1,12 @@
 //TODO:  create a variable 'validInput' to evalute the user input, and create a loop that will run until validInput is 'true'
 
-function cleanInputBoxes(){
-    let gasoline = document.getElementById('gasolineValue')
-    let alcohol = document.getElementById('alcoholValue')
+function cleanInputBoxes() {
+  let gasoline = document.getElementById("gasolineValue");
+  let alcohol = document.getElementById("alcoholValue");
 
-    gasoline.value = ''
-    alcohol.value = ''
+  gasoline.value = "";
+  alcohol.value = "";
 }
-
 
 function gasOrAlcohol(gasPrice, alcoholPrice) {
   if (gasPrice == 0 || alcoholPrice == 0) {
@@ -61,7 +60,6 @@ function wichFuelToUse() {
     let gasolinePrice = prompt("Qual o preço da Gasolina? ");
     let alcoholPrice = prompt("Qual o preço do Alcool? ");
 
-
     let fuelPrice = gasOrAlcohol(gasolinePrice, alcoholPrice);
 
     answer = fuelType(fuelPrice);
@@ -71,7 +69,3 @@ function wichFuelToUse() {
     endProgram = confirm("deseja repetir o cálculo?");
   }
 }
-
-
-
- 
